@@ -32,6 +32,11 @@
                                     <constraint firstItem="d0x-IG-cCH" firstAttribute="top" secondItem="3y6-Sf-Js8" secondAttribute="top" constant="5" id="gyw-dl-Oby"/>
                                     <constraint firstItem="d0x-IG-cCH" firstAttribute="leading" secondItem="3y6-Sf-Js8" secondAttribute="leading" constant="5" id="zad-i3-J2u"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjQ-2t-1j8">
                                 <rect key="frame" x="87" y="789" width="240" height="33"/>
@@ -41,10 +46,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="animationButtonPressed" destination="cSJ-3j-1VO" eventType="touchUpInside" id="SQA-uM-Pn6"/>
+                                    <action selector="animationButtonPressed:" destination="cSJ-3j-1VO" eventType="touchUpInside" id="eXD-U3-7tL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,7 +68,6 @@
                         <viewLayoutGuide key="safeArea" id="VZd-vD-Mfe"/>
                     </view>
                     <connections>
-                        <outlet property="animationButton" destination="VjQ-2t-1j8" id="20i-Sq-MKf"/>
                         <outlet property="animationLabel" destination="d0x-IG-cCH" id="V4k-Ad-GgE"/>
                         <outlet property="animationView" destination="3y6-Sf-Js8" id="Z7N-NT-j1X"/>
                     </connections>

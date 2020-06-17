@@ -13,23 +13,12 @@ class ViewController: UIViewController {
     // MARK: - IB Outlets
     @IBOutlet weak var animationView: SpringView!
     @IBOutlet weak var animationLabel: UILabel!
-    @IBOutlet weak var animationButton: UIButton!
     
     // MARK: - Private properties
     private var animation = Animation.getRandomAnimation()
-    
-    // MARK: - Override methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        animationView.layer.cornerRadius = 15
-        animationButton.layer.cornerRadius = 10
-        
-        nextAnimation()
-    }
 
     // MARK: - IB Actions
-    @IBAction func animationButtonPressed() {
+    @IBAction func animationButtonPressed(_ sender: UIButton) {
         animationLabel.text = animation.description
         
         animationView.animation = animation.name
@@ -39,13 +28,8 @@ class ViewController: UIViewController {
         animationView.curve = animation.curve
         animationView.animate()
         
-        nextAnimation()
-    }
-    
-    // MARK: - Private methods
-    func nextAnimation() {
         animation = Animation.getRandomAnimation()
-        animationButton.setTitle("Run \(animation.name)", for: .normal)
+        sender.setTitle("Run \(animation.name)", for: .normal)
     }
 }
 
