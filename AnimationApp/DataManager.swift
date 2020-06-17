@@ -40,7 +40,7 @@ class DataManager {
         .ZoomIn,
         .Wobble,
         .ZoomOut
-    ].shuffled()
+    ]
     
     let curves = Spring.AnimationCurve.allCases
 }

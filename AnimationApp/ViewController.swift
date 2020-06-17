@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     
     // MARK: - IB Outlets
     @IBOutlet weak var animationView: SpringView!
-    @IBOutlet weak var animationLabel: SpringLabel!
-    @IBOutlet weak var animationButton: SpringButton!
+    @IBOutlet weak var animationLabel: UILabel!
+    @IBOutlet weak var animationButton: UIButton!
     
     // MARK: - Private properties
     private var animation = Animation.getRandomAnimation()
