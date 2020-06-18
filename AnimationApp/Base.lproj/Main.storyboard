@@ -16,16 +16,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3y6-Sf-Js8" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="87" y="84" width="240" height="128"/>
+                                <rect key="frame" x="62" y="84" width="290" height="161.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation parameters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d0x-IG-cCH">
-                                        <rect key="frame" x="5" y="5" width="230" height="118"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation parameters" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d0x-IG-cCH">
+                                        <rect key="frame" x="5" y="5" width="280" height="151.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="d0x-IG-cCH" secondAttribute="trailing" constant="5" id="6St-8g-fvo"/>
                                     <constraint firstAttribute="bottom" secondItem="d0x-IG-cCH" secondAttribute="bottom" constant="5" id="ffh-OD-9MA"/>
@@ -39,9 +39,9 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjQ-2t-1j8">
-                                <rect key="frame" x="87" y="789" width="240" height="33"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="62" y="783" width="290" height="39"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <state key="normal" title="Run">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -57,8 +57,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="3y6-Sf-Js8" firstAttribute="width" secondItem="gjK-8G-kcu" secondAttribute="width" multiplier="0.57971" id="Ael-o1-hMl"/>
-                            <constraint firstItem="3y6-Sf-Js8" firstAttribute="height" secondItem="gjK-8G-kcu" secondAttribute="height" multiplier="0.142857" id="CDi-7a-PHp"/>
+                            <constraint firstItem="3y6-Sf-Js8" firstAttribute="width" secondItem="gjK-8G-kcu" secondAttribute="width" multiplier="0.7" id="Ael-o1-hMl"/>
+                            <constraint firstItem="3y6-Sf-Js8" firstAttribute="height" secondItem="gjK-8G-kcu" secondAttribute="height" multiplier="0.18" id="CDi-7a-PHp"/>
                             <constraint firstItem="3y6-Sf-Js8" firstAttribute="centerX" secondItem="VZd-vD-Mfe" secondAttribute="centerX" id="DXH-Pp-Kah"/>
                             <constraint firstItem="VZd-vD-Mfe" firstAttribute="bottom" secondItem="VjQ-2t-1j8" secondAttribute="bottom" constant="40" id="L72-a9-FyW"/>
                             <constraint firstItem="VjQ-2t-1j8" firstAttribute="width" secondItem="3y6-Sf-Js8" secondAttribute="width" id="SdQ-uk-P3x"/>
