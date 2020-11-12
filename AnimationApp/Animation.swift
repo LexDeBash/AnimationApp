@@ -6,15 +6,13 @@
 //  Copyright © 2020 Alexey Efimov. All rights reserved.
 //
 
-import CoreGraphics
-
 struct Animation {
     
     let name: String
     let curve: String
-    let force: CGFloat
-    let duration: CGFloat
-    let delay: CGFloat
+    let force: Float
+    let duration: Float
+    let delay: Float
     
     var description: String {
         return """
@@ -30,9 +28,9 @@ struct Animation {
         return Animation(
             name: DataManager.shared.animations.randomElement()?.rawValue ?? "slideLeft",
             curve: DataManager.shared.curves.randomElement()?.rawValue ?? "easeIn",
-            force: CGFloat.random(in: 1...2),
-            duration: CGFloat.random(in: 1...3),
-            delay: CGFloat.random(in: 0.1...0.5)
+            force: Float.random(in: 1...2),
+            duration: Float.random(in: 1...3),
+            delay: Float.random(in: 0.1...0.5)
         )
     }
 }
