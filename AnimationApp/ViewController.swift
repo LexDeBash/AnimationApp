@@ -22,9 +22,9 @@ class ViewController: UIViewController {
         animationLabel.text = animation.description
         
         animationView.animation = animation.name
-        animationView.force = animation.force
-        animationView.duration = animation.duration
-        animationView.delay = animation.delay
+        animationView.force = CGFloat(animation.force)
+        animationView.duration = CGFloat(animation.duration)
+        animationView.delay = CGFloat(animation.delay)
         animationView.curve = animation.curve
         animationView.animate()
         
